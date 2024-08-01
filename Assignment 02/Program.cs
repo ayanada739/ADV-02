@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections;
 using System.Reflection;
 using System.Threading.Tasks;
+using System.Linq;
 
 namespace Assignment_02
 {
@@ -29,12 +30,19 @@ namespace Assignment_02
             }
         }
 
-    #endregion
+        #endregion
 
+        #region 2. You are given a list of integers. Your task is to find and return a new list containing only the even numbers from the given list.
 
+        public List<int> GetEvenNumbers(List<int> numbers)
+        {
+            return numbers.Where(n => n % 2 == 0).ToList();
+        }
 
-    #endregion
-    static void Main(string[] args)
+        #endregion
+
+        #endregion
+        static void Main(string[] args)
         {
             #region Part 01 Write a Report about all Collections Given in the Session and Compare [Structure, Time Complexity, and Business Case With Implemented Examples]
 
