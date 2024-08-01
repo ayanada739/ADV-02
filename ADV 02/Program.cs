@@ -17,6 +17,21 @@ namespace ADV_02
         }
 
 
+        public static int SumList(List<int> List)
+        {
+            int Sum = 0;
+            if (List is not null)
+                for (int i = 0; i < List.Count; i++)
+                    Sum += (int)List[i];  
+                                                                
+            return Sum;
+        }
+
+
+
+
+
+
         static void Main(string[] args)
         {
             #region Non_Generic Collections - ArrayList
@@ -87,7 +102,62 @@ namespace ADV_02
             ////} 
             #endregion
 
+            #region Generic Collections - List
+           // //List ==> ArrayList Version With Generic
 
+           // //List<int> Numbers = new List<int>();
+           // //Console.WriteLine($"Count Of List = {Numbers. Count} ,Capacity Of arrayList = {Numbers. Capacity}"); //0,0
+           // //Numbers.Add(1);
+           // ////Upon adding the first element to the list the capacity is
+           // //// incheased to DéfauttCÅpacity = 4
+           // //// Create New array at Heap With Size =4
+           // //Console.WriteLine($"Count Of List = {Numbers.Count} ,Capacity Of arrayList = {Numbers.Capacity}"); //1,4
+
+           // //Numbers.Add(2);
+           // //Numbers.AddRange(new int[] { 3 , 4 });
+           // //Console.WriteLine($"Count Of List = {Numbers.Count} ,Capacity Of arrayList = {Numbers.Capacity}"); //4,4
+
+
+           // //Numbers.Add(5);
+           // //Console.WriteLine("After Adding 5th Element");
+           // //Console.WriteLine($"Count Of List = {Numbers.Count} ,Capacity Of arrayList = {Numbers.Capacity}"); //5,8
+
+           // //// 8 - 5 = 3 * 4 = 12 Bytes Unused
+
+           // //Numbers.TrimExcess(); // Delete Unused Bytes
+           // //Console.WriteLine("After Trim");
+           // //Console.WriteLine($"Count Of List = {Numbers.Count} ,Capacity Of arrayList = {Numbers.Capacity}"); //5,5
+
+
+
+
+           // List<int> Numbers = new List<int>(5) { 1 , 2 , 3 , 4 , 5 };
+           //// Console.WriteLine($"Count Of List = {Numbers.Count} ,Capacity Of arrayList = {Numbers.Capacity}"); //5,5
+
+           // Numbers.Add(6);
+           // // Console.WriteLine($"Count Of List = {Numbers.Count} ,Capacity Of arrayList = {Numbers.Capacity}"); //6,10
+
+           // //foreach (var item in Numbers)
+           // //{
+           // //    Console.WriteLine(item);
+           // //}
+           // Numbers[3] = 40;
+           // //Using Indexer To Set Value
+           // for (int i = 0; i < Numbers.Count; i++)
+           // {
+           //     Console.WriteLine(Numbers[i]);
+           // }
+           // //Using Indexer To Get Value
+
+           // //Numbers[6] = 100; // OutOfRangeException
+           // //Cannot Use Indexer To Add Element
+
+           // Numbers.Add(100);
+
+
+           // int Result = SumList(Numbers);
+           // Console.WriteLine(Result);
+            #endregion
         }
     }
 }
