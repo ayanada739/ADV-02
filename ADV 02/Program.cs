@@ -264,6 +264,30 @@ namespace ADV_02
 
             #endregion
 
+            #region Generic Collections - List [Stack] First In Last Out
+
+            //Stack<int> stack = new Stack<int>();
+            //stack.Push(1);
+            //stack.Push(2);
+            //stack.Push(3);
+
+            //foreach (var item in stack)
+            //   Console.WriteLine(item);
+
+            //Console.WriteLine(stack.Peek()); //3
+
+            // Console.WriteLine(stack.Pop()); //3
+            //Console.WriteLine(stack.Pop()); //2
+            // Console.WriteLine(stack.Pop()); //1
+
+            //bool result = stack.TryPop(out int Element);
+            //Console.WriteLine("=============");
+            //Console.WriteLine(result);
+            //Console.WriteLine(Element);
+            //foreach (var item in stack)
+            // Console.WriteLine(item);                             
+            #endregion
+
 
 
 
