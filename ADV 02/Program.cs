@@ -288,7 +288,33 @@ namespace ADV_02
             // Console.WriteLine(item);                             
             #endregion
 
+            #region Generic Collections - List [Queue] First In First Out
+            //Queue<int> queue = new Queue<int>();
+            //queue.Enqueue(1);
+            //queue.Enqueue(2);
+            //queue.Enqueue(3);
+            //queue.Enqueue(4);
 
+            //Console.WriteLine(queue.Peek());
+
+            //Console.WriteLine(queue.Enqueue());//1
+            //Console.WriteLine(queue.Enqueue());//2
+            //Console.WriteLine(queue.Enqueue());//3
+            //Console.WriteLine(queue.Enqueue());//4
+
+             //bool result =queue.TryPeek(out int Element);
+             //Console.WriteLine(result);
+             //Console.WriteLine(Element);
+
+            //bool result = queue.TryDequeue(out int Element);
+            //Console.WriteLine(result);
+            //Console.WriteLine(Element);
+
+
+            //foreach (int item in queue)
+            //    Console.WriteLine(item);
+
+            #endregion
 
 
 
