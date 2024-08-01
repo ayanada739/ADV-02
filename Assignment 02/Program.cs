@@ -8,7 +8,33 @@ namespace Assignment_02
 {
     internal class Program
     {
-        static void Main(string[] args)
+
+        #region Part 02
+
+        #region 1. You are given an ArrayList containing a sequence of elements. try to reverse the order of elements in the ArrayList in-place(in the same arrayList) without using the built-in Reverse. Implement a function that takes the ArrayList as input and modifies it to have the reversed order of elements.
+
+        public void ReverseArrayList(ArrayList arrayList)
+            {
+              int left = 0;
+              int right = arrayList.Count - 1;
+
+            while (left < right)
+            {
+                object temp = arrayList[left];
+                arrayList[left] = arrayList[right];
+                arrayList[right] = temp;
+
+                left++;
+                right--;
+            }
+        }
+
+    #endregion
+
+
+
+    #endregion
+    static void Main(string[] args)
         {
             #region Part 01 Write a Report about all Collections Given in the Session and Compare [Structure, Time Complexity, and Business Case With Implemented Examples]
 
@@ -85,6 +111,7 @@ namespace Assignment_02
 
 
             #endregion
+
         }
     }
 }
