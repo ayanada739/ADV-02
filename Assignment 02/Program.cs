@@ -41,6 +41,41 @@ namespace Assignment_02
 
         #endregion
 
+        #region 3. implement a custom list called FixedSizeList<T> with a predetermined capacity. This list should not allow more elements than its capacity and should provide clear messages if one tries to exceed it or access invalid indices.
+
+        public class FixedSizeList<T>
+        {
+            private T[] items;
+            private int count;
+
+            public FixedSizeList(int capacity)
+            {
+                if (capacity <= 0)
+                    throw new ArgumentException("Capacity Must be Greater Than Zero.", nameof(capacity));
+
+                items = new T[capacity];
+                count = 0;
+            }
+
+            public void Add(T item)
+            {
+                if (count >= items.Length)
+                    throw new InvalidOperationException("Cannot Add Elements. The List Is Full.");
+
+                items[count++] = item;
+            }
+
+            public T Get(int index)
+            {
+                if (index < 0 || index >= count)
+                    throw new ArgumentOutOfRangeException(nameof(index), "Invalid index.");
+
+                return items[index];
+            }
+        }
+        #endregion
+
+
         #endregion
         static void Main(string[] args)
         {
@@ -120,6 +155,34 @@ namespace Assignment_02
 
             #endregion
 
+
+
+
+            //FixedSizeList<int> fixedList = new FixedSizeList<int>(3);
+            //try
+            //{
+            //    fixedList.Add(1);
+            //    fixedList.Add(2);
+            //    fixedList.Add(3);
+            //    // fixedList.Add(4);
+            //}
+            //catch (Exception e)
+            //{
+            //    Console.WriteLine(e.Message);
+            //}
+
+            //Console.WriteLine("FixedSizeList items: ");
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    try
+            //    {
+            //        Console.Write(fixedList.Get(i) + " ");
+            //    }
+            //    catch (Exception e)
+            //    {
+            //        Console.WriteLine(e.Message);
+            //    }
+            //}
         }
     }
 }
