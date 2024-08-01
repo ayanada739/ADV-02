@@ -228,17 +228,45 @@ namespace ADV_02
             //int Index = Numbers.LastIndexOf(3);
             //Console.WriteLine(Index);
 
-           // List<int> Numbers = new List<int>(5) { 1, 2, 2, 3, 4, 5, 4, 3, 2, 5 };
+            // List<int> Numbers = new List<int>(5) { 1, 2, 2, 3, 4, 5, 4, 3, 2, 5 };
             //Numbers.Reverse();
-            
+
             //foreach (var item in Numbers)
-                //Console.WriteLine(item);
+            //Console.WriteLine(item);
             //Numbers.Remove(3);
             //Console.WriteLine("==============");
             //foreach (var item in Numbers)
-              //  Console.WriteLine(item);
+            //  Console.WriteLine(item);
 
             #endregion
+
+            #region Generic Collections - List [LinkedList]
+
+            //LinkedList<int> linkedList = new LinkedList<int>();
+            ////Console.WriteLine(linkedList.Count); //0
+
+            //linkedList.AddFirst(1);
+            ////Console.WriteLine(linkedList.Count); //1
+
+            //linkedList.AddLast(2);
+
+            //LinkedListNode<int> AfterNode =  linkedList.Find(1);
+            //linkedList.AddAfter(AfterNode, 5);
+
+            //linkedList.AddBefore(linkedList.Find(2), 10);
+
+            //foreach (var i in linkedList)
+            //    Console.WriteLine(i);
+
+            //Console.WriteLine(linkedList.Count); 
+
+
+
+            #endregion
+
+
+
+
 
 
         }
